@@ -15,6 +15,7 @@
 		1C348004207FFF5B0048F8E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C348002207FFF5B0048F8E1 /* LaunchScreen.storyboard */; };
 		1C34800F207FFF5B0048F8E1 /* SocketChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C34800E207FFF5B0048F8E1 /* SocketChatTests.swift */; };
 		1C34801A207FFF5B0048F8E1 /* SocketChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C348019207FFF5B0048F8E1 /* SocketChatUITests.swift */; };
+		1C34802A208000EF0048F8E1 /* ChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C348029208000EF0048F8E1 /* ChatRoomController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1C348015207FFF5B0048F8E1 /* SocketChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C348019207FFF5B0048F8E1 /* SocketChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketChatUITests.swift; sourceTree = "<group>"; };
 		1C34801B207FFF5B0048F8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C348029208000EF0048F8E1 /* ChatRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,8 @@
 		1C347FEA207FFF5B0048F8E1 = {
 			isa = PBXGroup;
 			children = (
+				1C348028208000E10048F8E1 /* Helpers */,
+				1C348027208000BF0048F8E1 /* View Controllers */,
 				1C347FF5207FFF5B0048F8E1 /* SocketChat */,
 				1C34800D207FFF5B0048F8E1 /* SocketChatTests */,
 				1C348018207FFF5B0048F8E1 /* SocketChatUITests */,
@@ -126,6 +130,21 @@
 				1C34801B207FFF5B0048F8E1 /* Info.plist */,
 			);
 			path = SocketChatUITests;
+			sourceTree = "<group>";
+		};
+		1C348027208000BF0048F8E1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1C348028208000E10048F8E1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1C348029208000EF0048F8E1 /* ChatRoomController.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +284,7 @@
 				1C347FF9207FFF5B0048F8E1 /* ViewController.swift in Sources */,
 				1C347FF7207FFF5B0048F8E1 /* AppDelegate.swift in Sources */,
 				1C347FFF207FFF5B0048F8E1 /* SocketChat.xcdatamodeld in Sources */,
+				1C34802A208000EF0048F8E1 /* ChatRoomController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
