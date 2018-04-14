@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C081AAA2081AA040039685D /* ChatRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C081AA92081AA040039685D /* ChatRoomTableViewController.swift */; };
+		1C081AC42081D1CB0039685D /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C081AC32081D1CB0039685D /* ChatRoomTableViewCell.swift */; };
 		1C347FF7207FFF5B0048F8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C347FF6207FFF5B0048F8E1 /* AppDelegate.swift */; };
-		1C347FF9207FFF5B0048F8E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C347FF8207FFF5B0048F8E1 /* ViewController.swift */; };
 		1C347FFC207FFF5B0048F8E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C347FFA207FFF5B0048F8E1 /* Main.storyboard */; };
 		1C347FFF207FFF5B0048F8E1 /* SocketChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C347FFD207FFF5B0048F8E1 /* SocketChat.xcdatamodeld */; };
 		1C348001207FFF5B0048F8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C348000207FFF5B0048F8E1 /* Assets.xcassets */; };
@@ -35,10 +36,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1C081AC22081AA6C0039685D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1C081AA92081AA040039685D /* ChatRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewController.swift; sourceTree = "<group>"; };
+		1C081AB12081AA6C0039685D /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		1C081AC32081D1CB0039685D /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		1C347FF3207FFF5B0048F8E1 /* SocketChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C347FF6207FFF5B0048F8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C347FF8207FFF5B0048F8E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C347FFB207FFF5B0048F8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C347FFE207FFF5B0048F8E1 /* SocketChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocketChat.xcdatamodel; sourceTree = "<group>"; };
 		1C348000207FFF5B0048F8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C081AB02081AA6C0039685D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C081AB12081AA6C0039685D /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1C347FEA207FFF5B0048F8E1 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +110,7 @@
 				1C347FF5207FFF5B0048F8E1 /* SocketChat */,
 				1C34800D207FFF5B0048F8E1 /* SocketChatTests */,
 				1C348018207FFF5B0048F8E1 /* SocketChatUITests */,
+				1C081AB02081AA6C0039685D /* Frameworks */,
 				1C347FF4207FFF5B0048F8E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				1C347FF6207FFF5B0048F8E1 /* AppDelegate.swift */,
-				1C347FF8207FFF5B0048F8E1 /* ViewController.swift */,
 				1C347FFA207FFF5B0048F8E1 /* Main.storyboard */,
 				1C348000207FFF5B0048F8E1 /* Assets.xcassets */,
 				1C348002207FFF5B0048F8E1 /* LaunchScreen.storyboard */,
@@ -135,6 +159,7 @@
 		1C348027208000BF0048F8E1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1C081AA92081AA040039685D /* ChatRoomTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -143,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				1C348029208000EF0048F8E1 /* ChatRoomController.swift */,
+				1C081AC32081D1CB0039685D /* ChatRoomTableViewCell.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -157,6 +183,7 @@
 				1C347FEF207FFF5B0048F8E1 /* Sources */,
 				1C347FF0207FFF5B0048F8E1 /* Frameworks */,
 				1C347FF1207FFF5B0048F8E1 /* Resources */,
+				1C081AC22081AA6C0039685D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -281,9 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C347FF9207FFF5B0048F8E1 /* ViewController.swift in Sources */,
 				1C347FF7207FFF5B0048F8E1 /* AppDelegate.swift in Sources */,
+				1C081AAA2081AA040039685D /* ChatRoomTableViewController.swift in Sources */,
 				1C347FFF207FFF5B0048F8E1 /* SocketChat.xcdatamodeld in Sources */,
+				1C081AC42081D1CB0039685D /* ChatRoomTableViewCell.swift in Sources */,
 				1C34802A208000EF0048F8E1 /* ChatRoomController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

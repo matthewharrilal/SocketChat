@@ -32,7 +32,7 @@ class ChatRoomController: NSObject {
         var writeStream: Unmanaged<CFWriteStream>?
         
         // Binding the read and write socket streams to the host running on port 1234 allows us to read and write byte data
-        CFStreamCreatePairWithSocketToHost(kCFAllocatorDefault, "52.91.109.76" as CFString, 1234, &readStream, &writeStream)
+        CFStreamCreatePairWithSocketToHost(kCFAllocatorDefault, "52.91.109.76" as CFString, 1234, &readStream, &writeStream) // Using kcallocator default so that are objects are automatically deallocated when nothing is referencing the object in memory
         
         
         // By calling retained value on these unmanaged objects allows ARC to automatically deallocate them therefore there will not be a memory leak
