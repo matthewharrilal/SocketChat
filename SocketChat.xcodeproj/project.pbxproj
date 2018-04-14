@@ -10,6 +10,7 @@
 		1C081AAA2081AA040039685D /* ChatRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C081AA92081AA040039685D /* ChatRoomTableViewController.swift */; };
 		1C081AC42081D1CB0039685D /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C081AC32081D1CB0039685D /* ChatRoomTableViewCell.swift */; };
 		1C081AC62081D3C70039685D /* TableViewControllerAsbtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C081AC52081D3C70039685D /* TableViewControllerAsbtraction.swift */; };
+		1C081AC92081D8C40039685D /* TextMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C081AC82081D8C40039685D /* TextMessage.swift */; };
 		1C347FF7207FFF5B0048F8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C347FF6207FFF5B0048F8E1 /* AppDelegate.swift */; };
 		1C347FFC207FFF5B0048F8E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C347FFA207FFF5B0048F8E1 /* Main.storyboard */; };
 		1C347FFF207FFF5B0048F8E1 /* SocketChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C347FFD207FFF5B0048F8E1 /* SocketChat.xcdatamodeld */; };
@@ -55,6 +56,7 @@
 		1C081AB12081AA6C0039685D /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		1C081AC32081D1CB0039685D /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		1C081AC52081D3C70039685D /* TableViewControllerAsbtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerAsbtraction.swift; sourceTree = "<group>"; };
+		1C081AC82081D8C40039685D /* TextMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessage.swift; sourceTree = "<group>"; };
 		1C347FF3207FFF5B0048F8E1 /* SocketChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C347FF6207FFF5B0048F8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C347FFB207FFF5B0048F8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,9 +106,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1C081AC72081D8AF0039685D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C081AC82081D8C40039685D /* TextMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1C347FEA207FFF5B0048F8E1 = {
 			isa = PBXGroup;
 			children = (
+				1C081AC72081D8AF0039685D /* Models */,
 				1C348028208000E10048F8E1 /* Helpers */,
 				1C348027208000BF0048F8E1 /* View Controllers */,
 				1C347FF5207FFF5B0048F8E1 /* SocketChat */,
@@ -313,6 +324,7 @@
 			files = (
 				1C347FF7207FFF5B0048F8E1 /* AppDelegate.swift in Sources */,
 				1C081AAA2081AA040039685D /* ChatRoomTableViewController.swift in Sources */,
+				1C081AC92081D8C40039685D /* TextMessage.swift in Sources */,
 				1C081AC62081D3C70039685D /* TableViewControllerAsbtraction.swift in Sources */,
 				1C347FFF207FFF5B0048F8E1 /* SocketChat.xcdatamodeld in Sources */,
 				1C081AC42081D1CB0039685D /* ChatRoomTableViewCell.swift in Sources */,

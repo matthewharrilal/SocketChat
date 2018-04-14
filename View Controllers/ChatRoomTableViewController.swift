@@ -11,6 +11,8 @@ import UIKit
 
 class ChatRoomTableViewController: UITableViewController {
     
+    var dataSource = TableViewDataSource(items: <#T##[_]#>)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,4 +20,6 @@ class ChatRoomTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
 }
