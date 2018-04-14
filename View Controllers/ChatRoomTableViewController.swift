@@ -11,7 +11,7 @@ import UIKit
 
 class ChatRoomTableViewController: UITableViewController {
     
-    var dataSource = TableViewDataSource(items: <#T##[_]#>)
+    var dataSource = TableViewDataSource(items: [TextMessage]())
     
     override func viewDidLoad() {
         super.viewDidLoad()
